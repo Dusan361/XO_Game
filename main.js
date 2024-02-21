@@ -75,6 +75,7 @@ function insertSign(){
 
 function computerTurn(){
 
+    //ako je pobednik igrac komp posle svakako odigra  potez pa na ovaj nacin prekidam njegovo izvrsenje
     if(winner===true){
         return;
     }
@@ -83,6 +84,7 @@ function computerTurn(){
 
     if (emptyBoxes.length > 0) {
         
+         //da se generise random broj ne veci od duzine niza
         let randomIndex = Math.floor(Math.random() * emptyBoxes.length);
 
         emptyBoxes[randomIndex].innerHTML = 'O'; 
