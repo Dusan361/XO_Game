@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+  background-image: url(/images/X-O_game.jpg);
+  background-size: cover;
+
+}
+
 .container{
 
     width: 600px;
